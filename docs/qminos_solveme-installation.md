@@ -8,9 +8,12 @@ but if it is necessary to create a new conda environment with qMINOS and solveME
 * qMINOS source code (Michael A. Saunders)
 * Download the following file: Makefile_THIS.defs into [root_directory] directory
 
+## Table of Contents
+- [Install from scratch](#install-from-scratch)
+- [Create new conda environment](#create-new-conda-environment)
 
-
-## Compute following steps inside WSL terminal
+## Install from scratch
+### Compute following steps inside WSL terminal
 
 **1. Create Anaconda environment**
 [root_directory]
@@ -45,7 +48,8 @@ but if it is necessary to create a new conda environment with qMINOS and solveME
         * cd ..
     * python setup.py develop
     
-## If the above steps have been completed before, create a new Conda environment like this:
+## Create new conda environment
+### If the above steps have been completed before, create a new Conda environment like this:
 [root_directory]
 1. conda create --name [NAME_ENV] python=3.6
 2. conda activate [NAME_ENV]
