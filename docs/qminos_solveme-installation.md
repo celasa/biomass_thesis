@@ -31,10 +31,10 @@ but if it is necessary to create a new conda environment with qMINOS and solveME
           * make clean
             * make
             * cd ..
-          * cd qMINOS/quadLP/qminos56
-            * make clean
-            * make
-            * cd ~
+      * cd qMINOS/quadLP/qminos56
+        * make clean
+         * make
+         * cd ~
 
 **3. Install and compile solveME**
 [root_directory]
