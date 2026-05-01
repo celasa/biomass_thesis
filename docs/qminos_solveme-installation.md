@@ -46,7 +46,6 @@ but if it is necessary to create a new conda environment with qMINOS and solveME
     * python setup.py develop
     
 ## If the above steps have been completed before, create a new Conda environment like this:
-Create conda environment
 [root_directory]
 1. conda create --name [NAME_ENV] python=3.6
 2. conda activate [NAME_ENV]
