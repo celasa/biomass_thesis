@@ -25,17 +25,17 @@ but if it is necessary to create a new conda environment with qMINOS and solveME
 **2. Compile qMINOS**
 [root_directory]
 * cd qMINOS
-    * unzip qM.zip (??)
-    * cd qMINOS/quadLP
-        * rm Makefile.defs
-        * cp -f [root_directory]/Makefile_THIS.defs .
-        * mv Makefile_THIS.defs Makefile.defs
-        * cd qMINOS/quadLP/minos56
-          * make clean
-          * make
-          * cd ..
+   * unzip qM.zip (??)
+   * cd qMINOS/quadLP
+      * rm Makefile.defs
+      * cp -f [root_directory]/Makefile_THIS.defs .
+      * mv Makefile_THIS.defs Makefile.defs
+      * cd qMINOS/quadLP/minos56
+         * make clean
+         * make
+         * cd ..
       * cd qMINOS/quadLP/qminos56
-        * make clean
+         * make clean
          * make
          * cd ~
 
@@ -45,8 +45,8 @@ but if it is necessary to create a new conda environment with qMINOS and solveME
 * cd solvemepy
   * cp qMINOS/quadLP/minos56/lib/libminos.a ./
     * cp qMINOS/quadLP/qminos56/lib/libquadminos.a ./
-        * cd ..
-    * python setup.py develop
+    * cd ..
+  * python setup.py develop
     
 ## Create new conda environment
 ### If the above steps have been completed before, create a new Conda environment like this:
