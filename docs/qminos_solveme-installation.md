@@ -6,7 +6,7 @@ but if it is necessary to create a new conda environment with qMINOS and solveME
 ### Requirements
 * Anaconda
 * qMINOS source code (Michael A. Saunders)
-* Download the following file: Makefile_THIS.defs into [root_directory] directory
+* Download the following file: Makefile.defs.txt into [root_directory] directory
 
 ## Table of Contents
 - [Install from scratch](#install-from-scratch)
@@ -28,8 +28,8 @@ but if it is necessary to create a new conda environment with qMINOS and solveME
    * unzip qM.zip (??)
    * cd qMINOS/quadLP
       * rm Makefile.defs
-      * cp -f [root_directory]/Makefile_THIS.defs .
-      * mv Makefile_THIS.defs Makefile.defs
+      * cp -f [root_directory]/Makefile.defs.txt .
+      * mv Makefile.defs.txt Makefile.defs
       * cd qMINOS/quadLP/minos56
          * make clean
          * make
