@@ -1,7 +1,7 @@
 ## Final COBRAme+qMINOS+solveME installation guide
 
 Here are all the necessary steps to create a Python environment to solve ME-models using qMINOS. All the steps from the start are provided first,
-but if it is necessary to create a new conda environment with qMINOS and solveME previously compiled go to the second section:
+but if it is necessary to create a new conda environment with qMINOS and solveME previously compiled go to the second section (Create new environment):
 
 ### Requirements
 * Anaconda
