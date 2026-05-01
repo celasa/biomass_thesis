@@ -3,7 +3,7 @@
 ### Requirements
 * Anaconda
 * qMINOS source code (Michael A. Saunders)
-* Download the following file: Makefile_THIS.defs
+* Download the following file: Makefile_THIS.defs into [root_to_file] directory
 
 ## Compute following steps inside WSL terminal
 
