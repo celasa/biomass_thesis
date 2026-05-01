@@ -29,8 +29,8 @@ but if it is necessary to create a new conda environment with qMINOS and solveME
         * mv Makefile_THIS.defs Makefile.defs
         * cd qMINOS/quadLP/minos56
           * make clean
-            * make
-            * cd ..
+          * make
+          * cd ..
       * cd qMINOS/quadLP/qminos56
         * make clean
          * make
