@@ -123,4 +123,3 @@ dependencies:
       - pytz==2024.2
       - scipy==1.5.4
       - sympy==1.9
-prefix: /triumvirate/home/celinaha/.conda/envs/reproduce
