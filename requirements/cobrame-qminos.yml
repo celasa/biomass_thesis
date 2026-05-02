@@ -157,4 +157,3 @@ dependencies:
       - scipy==1.5.4
       - six==1.17.0
       - sympy==1.9
-prefix: /triumvirate/home/celinaha/.conda/envs/ME_env
