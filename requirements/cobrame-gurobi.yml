@@ -1,4 +1,4 @@
-name: reproduce
+name: cobrame-gurobi
 channels:
   - gurobi
   - conda-forge
