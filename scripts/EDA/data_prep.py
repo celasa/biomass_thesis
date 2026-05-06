@@ -9,8 +9,6 @@ def get_samples(path):
     dfs = [pd.read_pickle(pkl) for pkl in files]
 
     return dfs
-
-
 def fix_col_names(samples_df, substrate):   
     c = 0
     for df in samples_df:
@@ -26,7 +24,7 @@ def make_dataset(dfs_list):
     
     return combined_data
 
-def build_substrate_df(sample_path, shadow_path, template_path, substrate, met1, met2):
+def build_substrate_df(sample_path, shadow_path, template_path, substrate, met1, met2): ## ENDRE SÅ VERSION 2 NEDE FUNKER FOR ALT
     #The function does four things: (1) merges the substrate flux vectors according to the template, 
     #(2) transposes the merged DataFrame so samples are rows and the template rows become columns, 
     #(3) adds a "source" column which is defined by the limiting nutrient source, 
@@ -72,3 +70,60 @@ def get_shadow_prices(shadow_dfs, met1, met2):
 
     df = pd.DataFrame({f"{met1}_shadow": met_x, f"{met2}_shadow": met_y})
     return df
+
+####################################################### for Section "3.6.2: outlier detection and shadow price analysis", sjekk all_samples.ipynb 2. outliers under ml_pipeline/notebooks:
+def get_shadow_prices2(shadow_dfs, metabolites):
+    rows = []
+
+    for df in shadow_dfs:
+        row = {}
+
+        for met in metabolites:
+            match = df.loc[df["metabolite"] == met, "shadow_price"]
+            row[f"{met}_shadow"] = match.iloc[0] if not match.empty else None
+
+        rows.append(row)
+
+    return pd.DataFrame(rows)
+
+def add_shadow_prices2(formatted_df, shadow_dfs, metabolites):
+    shadow_df = get_shadow_prices2(shadow_dfs, metabolites)
+
+    for met in metabolites:
+        col = f"{met}_shadow"
+        formatted_df[col] = shadow_df[col].values
+
+    return formatted_df
+
+def build_substrate_df2(sample_path, shadow_path, template_path, substrate, metabolites):
+    sample_dfs = get_samples(sample_path)
+    shadow_dfs = get_samples(shadow_path)
+
+    merged = merge_samples(sample_dfs, template_path, substrate)
+    formatted = format_sample_df(merged, substrate)
+    formatted = add_shadow_prices2(formatted, shadow_dfs, metabolites)
+
+    return formatted
+
+#TODO: merge_samples
+    # use balanced_template.csv
+def merge_samples(sample_dfs, template_path, substrate):
+    """"Merges all samples together in one dataframe, based on template"""
+    template = pd.read_csv(template_path)
+    dfs = sample_dfs
+
+    c=0
+    for df in dfs:
+        df.rename(columns={'flux': f'{substrate}_sample_{c}'}, inplace=True)
+        c+=1
+    # merge with template:
+    merged_all = template.copy()
+    # merged_all['source'] = substrate
+
+    for df in dfs:
+        merged_all = pd.merge(merged_all, df, on='reaction',  how='inner')
+
+    return merged_all
+
+def keep_shadow_and_selected(df, extra_cols):
+    return df[[col for col in df.columns if 'shadow' in col or col in extra_cols]]
