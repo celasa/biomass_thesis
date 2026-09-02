@@ -7,8 +7,6 @@ import csv
 import fcntl
 
 def generate_sample_space(source_range, oxygen_range=None, lo=False, n_samples=50, criterion='maximin'):
-    # carbon/oxygen range = [min, max] uptake flux
-    # n_samoles = number of samples in each PhPP, number of times the model is solved
     """
     Generate Latin Hypercube Samples using skopt.sampler.Lhs.
 
