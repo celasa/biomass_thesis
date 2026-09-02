@@ -18,7 +18,7 @@ warnings.filterwarnings(
 # -----------------------------
 # Input args
 # -----------------------------
-if len(sys.argv) != 5:
+if len(sys.argv) != 3:
     sys.exit(
         "Usage: python generate_sample_space.py "
         "<DIMENSION> <SOURCE>"
@@ -27,7 +27,7 @@ if len(sys.argv) != 5:
 dimension = sys.argv[1].upper()
 max_uptake = -200.0  # EDIT TO CHANGE MAX POSSIBLE UPTAKE
 n_samples = 1000 # EDIT TO CHANGE NUMBER OF SAMPLE POINTS TO GENERATE
-source = sys.argv[4].upper()
+source = sys.argv[2].upper()
 
 
 # -----------------------------
