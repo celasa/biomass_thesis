@@ -1,24 +1,25 @@
 #!/bin/bash
 
-SOURCE_CATEGORY=$1
-SOURCE_EXCHANGE=$2
+N_JOBS=$1
+SOURCE_CATEGORY=$2
+SOURCE_EXCHANGE=$3
 
-if [ "$#" -eq 3 ]; then
+if [ "$#" -eq 4 ]; then
     ALT_C=""
-    SUB_DIM=$3
-
-elif [ "$#" -eq 4 ]; then
-    ALT_C=$3
     SUB_DIM=$4
 
+elif [ "$#" -eq 5 ]; then
+    ALT_C=$4
+    SUB_DIM=$5
+
 else
-    echo "Error: expected 3 or 4 arguments."
+    echo "Usage:"
+    echo "  ./submit_sampling.sh <N_JOBS> <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <SUB_DIM>"
+    echo "  ./submit_sampling.sh <N_JOBS> <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <ALT_C> <SUB_DIM>"
     exit 1
 fi
 
-N_JOBS=20
-
-if [ "$#" -eq 3 ]; then
+if [ "$#" -eq 4 ]; then
     sbatch --array=1-"$N_JOBS" \
         run_sampling.sh \
         "$SOURCE_CATEGORY" "$SOURCE_EXCHANGE" "$SUB_DIM"
