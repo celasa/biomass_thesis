@@ -54,7 +54,7 @@ git clone <repository-url>
 cd biomass_thesis
 ```
 
-Two Conda environments are provided, corresponding to the two solver configurations.
+Two Conda environments are provided for the two solver configurations.
 
 ### Gurobi
 
@@ -66,6 +66,26 @@ conda env create -f requirements/gurobi.yml -n cobrame-gurobi
 
 ```bash
 conda env create -f requirements/qminos.yml -n cobrame-qminos
+```
+
+### Solver requirements
+
+#### Gurobi
+
+Gurobi simulations require a valid Gurobi license in addition to the `cobrame-gurobi` Conda environment. The license must be configured on the system where the simulations are run.
+
+#### qMINOS
+
+qMINOS simulations require installations of both **qMINOS** and **solvemepy**. These must be installed and configured before running the qMINOS simulation pipeline. qMINOS is not distributed with this repository and requires access to the qMINOS source code, which can be obtained from Prof. Michael A. Saunders at Stanford University. Detailed instructions for obtaining, installing, and configuring qMINOS and solvemepy are provided in [`docs/qminos-solver-installation.md`](docs/qminos-solver-installation.md).
+
+Once qMINOS and solvemepy are installed, create the corresponding Conda environment:
+
+```bash
+conda env create -f requirements/cobrame-qminos.yml -n cobrame-qminos
+
+### Machine learning and exploratory data analysis:
+```bash
+conda env create -f requirements/analysis-ml.yml -n analysis-ml
 ```
 
 Gurobi simulations additionally require a valid Gurobi license.
