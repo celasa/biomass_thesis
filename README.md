@@ -111,7 +111,7 @@ The sampling pipeline consists of two steps:
 1. Generate a Latin hypercube sample space.
 2. Solve the sampled conditions using a SLURM array.
 
-Two sampling modes are supported:
+Two sampling modes are supported. The `<DIMENSION>` argument specifies the sampling mode and must be either `PHPP` or `LO`::
 
 - `PHPP` — two-dimensional sampling of substrate and oxygen uptake across the phenotype phaseplane (PhPP sampling).
 - `LO` — one-dimensional sampling of substrate uptake across the line of optimality (LO sampling).
