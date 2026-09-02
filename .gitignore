@@ -3,4 +3,6 @@
 *.pickle
 *.log
 *.tmp
+
 __pycache__/
+*.py[cod]
