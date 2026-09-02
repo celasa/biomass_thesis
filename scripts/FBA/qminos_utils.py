@@ -1,6 +1,6 @@
 from qminospy.me1 import ME_NLP1
 
-def run_substrate_qminos(model, substrate):
+def run_substrate(model, substrate):
     """Solves model with input substrate"""
     rxn = model.reactions.get_by_id(substrate)
     rxn.lower_bound = -1000
