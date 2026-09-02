@@ -82,7 +82,7 @@ Gurobi simulations require a valid Gurobi license in addition to the `cobrame-gu
 
 qMINOS simulations require installations of both **qMINOS** and **solvemepy**. These must be installed and configured before running the qMINOS simulation pipeline.
 
-qMINOS is not distributed with this repository and requires access to the qMINOS source code, which can be obtained from Prof. Michael A. Saunders at Stanford University. Detailed instructions for obtaining, installing, and configuring qMINOS and solvemepy are provided in [`docs/qminos-solver-installation.md`](docs/qminos_solveme-installation.md).
+qMINOS is not distributed with this repository and requires access to the qMINOS source code, which can be obtained from Prof. Michael A. Saunders at Stanford University. Detailed instructions for obtaining, installing, and configuring qMINOS and solvemepy are provided in [`docs/qminos_solveme-installation.md`](docs/qminos_solveme-installation.md).
 
 Once qMINOS and solvemepy are installed, create the corresponding Conda environment:
 
