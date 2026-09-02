@@ -113,8 +113,8 @@ The sampling pipeline consists of two steps:
 
 Two sampling modes are supported:
 
-- `PHPP` — two-dimensional sampling of substrate and oxygen uptake.
-- `LO` — one-dimensional sampling of substrate uptake.
+- `PHPP` — two-dimensional sampling of substrate and oxygen uptake across the phenotype phaseplane (PhPP sampling).
+- `LO` — one-dimensional sampling of substrate uptake across the line of optimality (LO sampling).
 
 ### 1. Generate a sample space
 
@@ -150,7 +150,7 @@ For example:
 ./submit_sampling.sh 400 C EX_glc__D_e glc_PHPP
 ```
 
-With an alternative carbon source:
+With an alternative carbon source for nitrogen PhPP:
 
 ```bash
 ./submit_sampling.sh <N_JOBS> <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <ALT_C_EXCHANGE> <SUBSTRATE_DIMENSION>
@@ -159,7 +159,7 @@ With an alternative carbon source:
 For example:
 
 ```bash
-./submit_sampling.sh 400 N EX_nh4_e EX_glc__D_e nh4_PHPP
+./submit_sampling.sh 400 N EX_nh4_e EX_ac_e nh4_PHPP
 ```
 
 `N_JOBS` specifies the number of SLURM array tasks. The generated sample space is divided between these tasks, and each task solves its assigned sample points sequentially.
