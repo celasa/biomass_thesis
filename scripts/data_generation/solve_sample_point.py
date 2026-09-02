@@ -52,7 +52,12 @@ SAMPLE_DIR = DATA / "sample_spaces" / dimension
 model_path = FILES / "iJL1678b.pickle"
 lhs_file = SAMPLE_DIR / f"{substrate}_{dimension}_sample_space.npy"
 
-output_dir = DATA / dimension / substrate
+if alt_C is not None:
+    alt_C_suffix = alt_C.split("_")[1]
+    output_dir = DATA / f"{dimension}_samples" / f"{substrate}_{alt_C_suffix}"
+else:
+    output_dir = DATA / f"{dimension}_samples" / substrate
+
 output_dir.mkdir(parents=True, exist_ok=True)
 
 flux_dir = output_dir / "flux"
@@ -101,8 +106,9 @@ if task_id < 0 or task_id >= len(chunks):
     )
 
 # ==============================
-# 3. Run samples with timeout & crash handling
-# ==============================
+# Run samples 
+# ================================
+
 start_idx = sum(len(chunks[i]) for i in range(task_id))
 
 if dimension == "LO":
