@@ -3,7 +3,7 @@
 ## Introduction
 
 ## Repository structure 
-
+```text
 .
 ├── data                                
 │   ├── biomass_datasets
@@ -37,7 +37,7 @@
     ├── ML
     ├── sampling
     └── solver_selection
-
+```
 1. `data/` — input datasets, generated sample spaces, and simulation outputs.
 2. `files/` — ME-model and supporting files required by the simulation pipelines.
 3. `requirements/` — Conda environment specifications.
