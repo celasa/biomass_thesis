@@ -1,7 +1,5 @@
 # Project description
 
-## Introduction
-
 ## Repository structure 
 ```text
 .
