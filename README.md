@@ -124,7 +124,7 @@ data/gurobi_results/
 data/qminos_results/
 ```
 
-## Sampling
+## Sampling the line of optimality (LO) and the phenotype phaseplane (PhPP)
 
 The sampling pipeline consists of two steps:
 
