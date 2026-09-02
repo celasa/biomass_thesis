@@ -6,3 +6,7 @@
 
 __pycache__/
 *.py[cod]
+
+data/ARCHIVE/
+data/solver_selection/
+data/results/*.png
