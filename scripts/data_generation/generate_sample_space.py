@@ -12,10 +12,12 @@ warnings.filterwarnings(
 
 from lhs import generate_sample_space
 
-c_source = 'EX_nh4_e'
-n_samples = 700
-c_range = (-135.0, 0.0)
-o_range= (-135.0, 0.0)
+# -----------------------------
+# Input args
+# -----------------------------
+LO = $1 
+RANGE = $2
+N_SAMPLES = $3
 
-sample = generate_sample_space(carbon_range=c_range, oxygen_range=o_range, lo=False, n_samples=n_samples)
-np.save(f"LHS_nh4_ac_samples.npy", sample)
+sample = generate_sample_space(source_range=RANGE, oxygen_range=RANGE, lo=LO, n_samples=N_SAMPLES)
+np.save(f"sample_space.npy", sample)
