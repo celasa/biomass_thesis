@@ -1,6 +1,13 @@
 *.csv
+!files/*.csv
+
 *.pkl
+!files/*.pkl
+!data/ml_data/*.pkl
+
 *.pickle
+!files/*.pickle
+
 *.log
 *.tmp
 *.json
