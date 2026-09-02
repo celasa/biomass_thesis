@@ -206,3 +206,4 @@ The submission scripts (`submit_fba.sh` and `submit_sampling.sh`) create the req
 
 Cluster-specific settings, such as Conda environment paths and SLURM resource requests, may need to be adjusted for a different HPC system.
 
+## References
