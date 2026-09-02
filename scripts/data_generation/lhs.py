@@ -121,17 +121,17 @@ def solve_sample_point(model):
             "shadow": model.solution.y_dict}
 
 ################################################################################
-def run_phpp_sampler(model, source_type, source, sample_point, lo_fixed=None, alt_C=None):
+def run_phpp_sampler(model, source_category, source, sample_point, lo_fixed=None, alt_C=None):
      
     # LO-line:
     if len(sample_point) == 1:
          uptake = sample_point[0]
-         set_uptake_bounds(model, source_type, source, uptake, lo_fixed=lo_fixed, alt_C=alt_C)
+         set_uptake_bounds(model, source_category, source, uptake, lo_fixed=lo_fixed, alt_C=alt_C)
          oxygen_uptake = lo_fixed
 
     else: # 2D plane:
          uptake, oxygen = sample_point
-         set_uptake_bounds(model, source_type, source, uptake, oxygen=oxygen, alt_C=alt_C)
+         set_uptake_bounds(model, source_category, source, uptake, oxygen=oxygen, alt_C=alt_C)
          oxygen_uptake = oxygen
 
     phenotype = solve_sample_point(model)
@@ -151,10 +151,3 @@ def load_me(path):
         model = pickle.load(f)
     return model
 
-######################################################################
-def write_time(sample, sample_point, value, timing_csv):
-    with open(timing_csv, "a", newline="") as f:
-        fcntl.flock(f, fcntl.LOCK_EX)
-        writer = csv.writer(f)
-        writer.writerow([sample, sample_point, value])
-        fcntl.flock(f, fcntl.LOCK_UN)
