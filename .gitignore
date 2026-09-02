@@ -3,6 +3,7 @@
 *.pickle
 *.log
 *.tmp
+*.json
 
 __pycache__/
 *.py[cod]
@@ -11,3 +12,4 @@ data/ARCHIVE/
 data/solver_selection/
 data/results/*.png
 scripts/ARCHIVE
+notebooks/ARCHIVE
