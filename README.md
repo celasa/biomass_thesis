@@ -78,7 +78,7 @@ conda env create -f requirements/analysis-ml.yml -n analysis-ml
 
 #### Gurobi
 
-Gurobi simulations require a valid Gurobi license in addition to the `cobrame-gurobi` Conda environment. The license must be configured on the system where the simulations are run.
+Gurobi simulations require a valid Gurobi license in addition to the `cobrame-gurobi` Conda environment. The license must be configured on the system where the simulations are run. A free academic license can be obtained from the [Gurobi Academic Program](https://www.gurobi.com/academics/).
 
 #### qMINOS
 
