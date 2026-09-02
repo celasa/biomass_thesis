@@ -141,7 +141,7 @@ data/sample_spaces/
 Without an alternative carbon source:
 
 ```bash
-./submit_sampling.sh <N_JOBS> <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <SUBSTRATE_DIMENSION>
+./submit_sampling.sh <N_JOBS> <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <SOURCE_DIMENSION>
 ```
 Dimension refer to LO (1D) or PHPP (2D)
 
@@ -154,7 +154,7 @@ For example:
 With an alternative carbon source for nitrogen PhPP:
 
 ```bash
-./submit_sampling.sh <N_JOBS> <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <ALT_C_EXCHANGE> <SUBSTRATE_DIMENSION>
+./submit_sampling.sh <N_JOBS> <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <ALT_C_EXCHANGE> <SOURCE_DIMENSION>
 ```
 
 For example:
