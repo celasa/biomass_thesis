@@ -1,7 +1,7 @@
 from cobrame.solve import algorithms
 
 
-def run_substrate_gurobi(model, substrate):
+def run_substrate(model, substrate):
     """Solves model with input substrate"""
 
     rxn = model.reactions.get_by_id(substrate)
