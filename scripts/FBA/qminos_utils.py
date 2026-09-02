@@ -1,6 +1,5 @@
 from qminospy.me1 import ME_NLP1
 
-#TODO: Function to solve model in environment
 def run_substrate_qminos(model, substrate):
     """Solves model with input substrate"""
     rxn = model.reactions.get_by_id(substrate)
