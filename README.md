@@ -143,6 +143,7 @@ Without an alternative carbon source:
 ```bash
 ./submit_sampling.sh <N_JOBS> <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <SUBSTRATE_DIMENSION>
 ```
+Dimension refer to LO (1D) or PHPP (2D)
 
 For example:
 
