@@ -155,7 +155,7 @@ Generated sample spaces are stored under:
 ```text
 data/sample_spaces/
 ```
-* The above example is saved as `glc_PHPP_sample\_space.npy` file under `data/sample_spaces/PHPP`
+* The above example is saved as `glc_PHPP_sample_space.npy` file under `data/sample_spaces/PHPP`
 
 ### 2. Submit sampling jobs
 
