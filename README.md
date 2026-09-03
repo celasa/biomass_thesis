@@ -247,6 +247,3 @@ This repository makes use of the following software, models, and methods:
    *Computation of condition-dependent proteome allocation reveals variability in the macro and micro nutrient requirements for growth.*  
    PLOS Computational Biology, 17(6), e1007817.  
    [https://doi.org/10.1371/journal.pcbi.1007817](https://doi.org/10.1371/journal.pcbi.1007817)
-   
-7. **Latin hypercube sampling**  
-   McKay, M. D., Beckman, R. J., & Conover, W. J. (1979). A comparison of three methods for selecting values of input variables in the analysis of output from a computer code. *Technometrics*, 21(2), 239–245.
