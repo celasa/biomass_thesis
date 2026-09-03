@@ -213,3 +213,31 @@ The submission scripts (`submit_fba.sh` and `submit_sampling.sh`) create the req
 Cluster-specific settings, such as Conda environment paths and SLURM resource requests, may need to be adjusted for a different HPC system.
 
 ## References
+This repository makes use of the following software, models, and methods:
+
+1. **COBRAme**  
+   Lloyd, C. J., et al. (2018). COBRAme: A computational framework for genome-scale models of metabolism and gene expression. *PLoS Computational Biology*, 14(7), e1006302.  
+   [https://doi.org/10.1371/journal.pcbi.1006302](https://doi.org/10.1371/journal.pcbi.1006302)
+
+2. **iJL1678b ME-model**  
+   Lloyd, C. J., et al. (2018). COBRAme: A computational framework for genome-scale models of metabolism and gene expression. *PLoS Computational Biology*, 14(7), e1006302.  
+   [https://doi.org/10.1371/journal.pcbi.1006302](https://doi.org/10.1371/journal.pcbi.1006302)
+
+3. **Gurobi Optimizer**  
+   Gurobi Optimization, LLC. *Gurobi Optimizer Reference Manual*.  
+   [https://www.gurobi.com](https://www.gurobi.com)
+
+4. **solveME**  
+   Yang, L., Ma, D., Ebrahim, A., Lloyd, C. J., Saunders, M. A., & Palsson, B. O. (2016).  
+   *solveME: fast and reliable solution of nonlinear ME models.*  
+   BMC Bioinformatics, 17, 391.  
+   [https://doi.org/10.1186/s12859-016-1240-1](https://doi.org/10.1186/s12859-016-1240-1)
+
+5. **Quad MINOS / qMINOS**  
+   Ma, D., Yang, L., Fleming, R. M. T., Thiele, I., Palsson, B. O., & Saunders, M. A. (2017).  
+   *Reliable and efficient solution of genome-scale models of Metabolism and macromolecular Expression.*  
+   Scientific Reports, 7, 40863.  
+   [https://doi.org/10.1038/srep40863](https://doi.org/10.1038/srep40863)
+   
+6. **Latin hypercube sampling**  
+   McKay, M. D., Beckman, R. J., & Conover, W. J. (1979). A comparison of three methods for selecting values of input variables in the analysis of output from a computer code. *Technometrics*, 21(2), 239–245.
