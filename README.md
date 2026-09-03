@@ -1,4 +1,7 @@
-# Project description
+# Studying the Transformation of Nutritional Input into Macromolecular Biomass Composition in iJL1678b-ME
+
+## Project description
+This project investigates how the biomass composition predicted by the metabolic and gene expression (ME-) model of *Escherichia Coli*, iJL1678b-ME, depends on the *in silico* growth conditions. The project is divided into three parts: (1) solver selection, (2) sampling of the line of optimality (LO) and latin hypercube sampling (LHS) of the phenotype phaseplane (PhPP), and (3) machine learning (ML) to predict the growth condition from the biomass composition. The pipelines that were developed for these respective parts are provided in the repository.
 
 ## Repository structure 
 ```text
