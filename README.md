@@ -193,9 +193,9 @@ data/PHPP_samples/
 data/LO_samples/
 ```
 In the example with glucose:
-* 400 of the sample points in `glc_PHPP_sample\_space.npy` in parallell, and each feasible FBA result is stored under `data/PHPP_samples/glc`:
-      * Flux vectors are stored in `data/PHPP_samples/glc/flux`
-      * Shadow prices are stored in `data/PHPP_samples/glc/shadow`
+* 400 of the sample points in `glc_PHPP_sample\_space.npy` in parallell, and each feasible FBA result is stored under `data/PHPP_samples/glc`
+* Flux vectors are stored in `data/PHPP_samples/glc/flux`
+* Shadow prices are stored in `data/PHPP_samples/glc/shadow`
 
 
 ## Data
