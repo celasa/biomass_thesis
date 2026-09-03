@@ -155,6 +155,7 @@ Generated sample spaces are stored under:
 ```text
 data/sample_spaces/
 ```
+* The above example is saved as `glc_PHPP_sample\_space.npy` file under `data/sample_spaces/PHPP`
 
 ### 2. Submit sampling jobs
 
@@ -191,6 +192,11 @@ Sampling results are written to:
 data/PHPP_samples/
 data/LO_samples/
 ```
+In the example with glucose:
+* 400 of the sample points in `glc_PHPP_sample\_space.npy` in parallell, and each feasible FBA result is stored under `data/PHPP_samples/glc`:
+      * Flux vectors are stored in `data/PHPP_samples/glc/flux`
+      * Shadow prices are stored in `data/PHPP_samples/glc/shadow`
+
 
 ## Data
 
