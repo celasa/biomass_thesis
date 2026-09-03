@@ -11,7 +11,7 @@ Sampling procedure:
 1. `./submit_sampling.sh <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <SUBSTRATE_DIMENSION>`
 2. `./submit_sampling.sh <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <ALT_C_EXCHANGE> <SUBSTRATE_DIMENSION>`
    
-**When `<ALT_C_EXCHANGE>` is not specifified, EX_glc__D_e (gucose) is used as default. When `<ALT_C_EXCHANGE>` is provided, an identifier is included in the repository for where the FBA results are stored.**
+**When `<ALT_C_EXCHANGE>` is not specifified, EX_glc__D_e (gucose) is used as default. When `<ALT_C_EXCHANGE>` is provided, an identifier is included in the directory for where the FBA results are stored.**
 
 # LO-sampling
 
