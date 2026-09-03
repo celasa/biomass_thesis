@@ -4,6 +4,7 @@ Sample space:
 
 1. `conda activate [python environment]`
 2. `python generate_sample_space.py <DIMENSION> <SOURCE>`
+   
 *The uptake range and number of samples is set by default in `generate_sample_space.py` at `max_uptake` and `n_samples`, this can be changed by editing the file from the command line: `nano generate_sample_space.py`*
 
 Sampling procedure:
