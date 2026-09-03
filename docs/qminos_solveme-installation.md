@@ -10,6 +10,7 @@ Here are the necessary steps for the alternative installation guide to create a 
 * Download the following file from this repository: `files/Makefile.defs.txt` into [root] directory where you will be compiling qMINOS
 
 ## 1. Compile qMINOS in home directory (root)
+**After unzipping the files**
 
 ```bash
 [root] cd qMINOS
