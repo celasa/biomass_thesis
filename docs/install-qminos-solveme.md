@@ -30,5 +30,5 @@
 
 ## 4. Create conda environment with qMINOS:
 ```bash
-[root] conda env create -f requirements/analysis-ml.yml -n analysis-ml
+[root] conda env create -f requirements/cobrame-qminos.yml -n cobrame-qminos
 ```
