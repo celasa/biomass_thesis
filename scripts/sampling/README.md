@@ -5,13 +5,13 @@ Sample space:
 1. `conda activate [python environment]`
 2. `python generate_sample_space.py <DIMENSION> <SOURCE>`
    
-*The uptake range and number of samples is set by default in `generate_sample_space.py` at `max_uptake` and `n_samples`, this can be changed by editing the file from the command line: `nano generate_sample_space.py`*
+**The uptake range and number of samples is set by default in `generate_sample_space.py` at `max_uptake` and `n_samples`, this can be changed by editing the file from the command line: `nano generate_sample_space.py`**
 
 Sampling procedure:
 1. `./submit_sampling.sh <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <SUBSTRATE_DIMENSION>`
 2. `./submit_sampling.sh <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <ALT_C_EXCHANGE> <SUBSTRATE_DIMENSION>`
    
-*When ALT_C_EXCHANGE is not specifified, EX_glc__D_e (gucose) is used as default. When ALT_C_EXCHANGE is provided, an identifier is included in the repository for where the FBA results are stored.*
+**When `<ALT_C_EXCHANGE>` is not specifified, EX_glc__D_e (gucose) is used as default. When `<ALT_C_EXCHANGE>` is provided, an identifier is included in the repository for where the FBA results are stored.**
 
 # LO-sampling
 
