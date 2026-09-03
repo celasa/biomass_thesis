@@ -75,7 +75,7 @@ Carbon:
 
 Nitrogen:
 * `./submit_sampling.sh N EX_nh4_e nh4_PHPP` 
-* `./submit_sampling.sh N EX_nh4_e EX_ac_e nh4_PHPP` 
+* `./submit_sampling.sh N EX_nh4_e EX_ac_e nh4_PHPP`      # Saved under `data/PHPP_samples/nh4_ac`
 
 * `./submit_sampling.sh N EX_arg__L_e arg_PHPP`
 * `./submit_sampling.sh N EX_arg__L_e EX_ac_e arg_PHPP`
