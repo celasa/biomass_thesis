@@ -159,7 +159,7 @@ data/sample_spaces/
 
 ### 2. Submit sampling jobs
 
-Without an alternative carbon source:
+Without an alternative carbon source (e.g. glucose is used as carbon source):
 
 ```bash
 ./submit_sampling.sh <N_JOBS> <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <SOURCE_DIMENSION>
@@ -197,7 +197,7 @@ In the example with glucose:
 * Flux vectors are stored in `data/PHPP_samples/glc/flux`
 * Shadow prices are stored in `data/PHPP_samples/glc/shadow`
 
-The results from the ammonium environment with acetate as nutrient source, the results are stored in:
+The results from the ammonium environment with acetate as carbon source, the results are stored in:
 * `data/PHPP_samples/nh4_ac`
 
 ## Data
