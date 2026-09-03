@@ -1,7 +1,7 @@
 # Reproduce the setup for this thesis
 
-`./submit_sampling.sh <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <SUBSTRATE_DIMENSION>`
-`./submit_sampling.sh <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <ALT_C_EXCHANGE> <SUBSTRATE_DIMENSION>`
+1. `./submit_sampling.sh <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <SUBSTRATE_DIMENSION>`
+2. `./submit_sampling.sh <SOURCE_CATEGORY> <SOURCE_EXCHANGE> <ALT_C_EXCHANGE> <SUBSTRATE_DIMENSION>`
 
 # LO-sampling
 * DIMENSION = LO
