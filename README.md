@@ -41,7 +41,7 @@ This project investigates how the biomass composition predicted by the metabolic
 1. `data/` — input datasets, generated sample spaces, and simulation outputs.
 2. `files/` — ME-model and supporting files required by the simulation pipelines.
 3. `requirements/` — Conda environment specifications.
-4. `scripts/FBA/` — scripts for substrate-specific FBA simulations using Gurobi or QMINOS.
+4. `scripts/FBA/` — scripts for substrate-specific FBA simulations using Gurobi or qMINOS.
 5. `scripts/sampling/` — scripts for generating PhPP and LO data.
 
 
