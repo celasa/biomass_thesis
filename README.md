@@ -91,7 +91,6 @@ conda env create -f requirements/cobrame-qminos.yml -n cobrame-qminos
 ```
 
 ## FBA simulations
-
 The FBA pipeline evaluates individual nutrient sources using either **Gurobi** or **QMINOS**.
 
 Submit simulations from `scripts/FBA/`:
@@ -123,6 +122,7 @@ Results are written to:
 data/gurobi_results/
 data/qminos_results/
 ```
+> **Note:** The FBA simulation pipeline in this repository was refactored from code developed for the study *Computation of condition-dependent proteome allocation reveals variability in the macro and micro nutrient requirements for growth* by Lloyd et al. (2021). The implementation has been reorganized and modified for the simulation workflows used in this project.
 
 ## Sampling the line of optimality (LO) and the phenotype phaseplane (PhPP)
 
@@ -213,6 +213,9 @@ The submission scripts (`submit_fba.sh` and `submit_sampling.sh`) create the req
 Cluster-specific settings, such as Conda environment paths and SLURM resource requests, may need to be adjusted for a different HPC system.
 
 ## References
+The FBA simulation pipeline is refactored from "Computation of condition-dependent proteome allocation reveals variability in the macro and micro nutrient requirements for growth":
+
+
 This repository makes use of the following software, models, and methods:
 
 1. **COBRAme**  
@@ -238,6 +241,12 @@ This repository makes use of the following software, models, and methods:
    *Reliable and efficient solution of genome-scale models of Metabolism and macromolecular Expression.*  
    Scientific Reports, 7, 40863.  
    [https://doi.org/10.1038/srep40863](https://doi.org/10.1038/srep40863)
+
+6. **FBA simulation pipeline**  
+   Lloyd, C. J., Monk, J., Yang, L., Ebrahim, A., & Palsson, B. O. (2021).  
+   *Computation of condition-dependent proteome allocation reveals variability in the macro and micro nutrient requirements for growth.*  
+   PLOS Computational Biology, 17(6), e1007817.  
+   [https://doi.org/10.1371/journal.pcbi.1007817](https://doi.org/10.1371/journal.pcbi.1007817)
    
-6. **Latin hypercube sampling**  
+7. **Latin hypercube sampling**  
    McKay, M. D., Beckman, R. J., & Conover, W. J. (1979). A comparison of three methods for selecting values of input variables in the analysis of output from a computer code. *Technometrics*, 21(2), 239–245.
