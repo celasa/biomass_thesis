@@ -1,6 +1,6 @@
 # Alternative to the official installation instructions of qMINOS
 
-Here are all the necessary steps to create a Python environment to solve ME-models using qMINOS and solveME. The official downloading instructions are provided with the qMINOS source code and at the Github repositories for COBRAme and solveME:
+Here are the necessary steps for the alternative installation guide to create a Python environment to solve ME-models using qMINOS and solveME. The official downloading instructions are provided with the qMINOS source code and at the Github repositories for COBRAme and solveME:
 * COBRAme: https://github.com/sbrg/cobrame?tab=readme-ov-file
 * solveME: https://github.com/SBRG/solvemepy/tree/master
 
