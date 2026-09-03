@@ -9,11 +9,6 @@ Here are the necessary steps for the alternative installation guide to create a 
 * qMINOS source code (Michael A. Saunders)
 * Download the following file from this repository: `files/Makefile.defs.txt` into [root] directory where you will be compiling qMINOS
 
-## Contents
-- [Compile qMINOS in home directory](#Compile-qMINOS-in-home-directory-(root))
-- [Install and compile solveME in home directory](#Install-and-compile-solveME-in-home-directory-(root))
-- [ Create conda environment with qMINOS:](#Create-conda-environment-with-qMINOS:)
-
 ## 1. Compile qMINOS in home directory (root)
 
 ```bash
