@@ -57,7 +57,7 @@ def make_prediction(X, binary_clf, carbon_clf, nitrogen_clf, le_type, le_carbon,
     source_pred = np.empty(len(X), dtype=object)
 
     if len(carbon_idx) > 0:
-        source_pred[carbon_idx]   = le_carbon.inverse_transform(
+        source_pred[carbon_idx] = le_carbon.inverse_transform(
             carbon_clf.predict(X.iloc[carbon_idx])
         )
     if len(nitrogen_idx) > 0:
