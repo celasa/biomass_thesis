@@ -238,7 +238,7 @@ This repository makes use of the following software, models, and methods:
    BMC Bioinformatics, 17, 391.  
    [https://doi.org/10.1186/s12859-016-1240-1](https://doi.org/10.1186/s12859-016-1240-1)
 
-5. **Quad MINOS / qMINOS**  
+5. **QMINOS**  
    Ma, D., Yang, L., Fleming, R. M. T., Thiele, I., Palsson, B. O., & Saunders, M. A. (2017).  
    *Reliable and efficient solution of genome-scale models of Metabolism and macromolecular Expression.*  
    Scientific Reports, 7, 40863.  
