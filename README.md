@@ -41,7 +41,7 @@ This project investigates how the biomass composition predicted by the metabolic
 1. `data/` — input datasets, generated sample spaces, and simulation outputs.
 2. `files/` — ME-model and supporting files required by the simulation pipelines.
 3. `requirements/` — Conda environment specifications.
-4. `scripts/FBA/` — scripts for substrate-specific FBA simulations using Gurobi or qMINOS.
+4. `scripts/FBA/` — scripts for substrate-specific FBA simulations using Gurobi or QMINOS.
 5. `scripts/sampling/` — scripts for generating PhPP and LO data.
 
 
@@ -66,7 +66,7 @@ conda env create -f requirements/gurobi.yml -n cobrame-gurobi
 
 #### qMINOS
 
-See the qMINOS solver requirements below before creating this environment.
+See the QMINOS solver requirements below before creating this environment.
 
 #### Machine learning and exploratory data analysis
 
@@ -80,13 +80,13 @@ conda env create -f requirements/analysis-ml.yml -n analysis-ml
 
 Gurobi simulations require a valid Gurobi license in addition to the `cobrame-gurobi` Conda environment. The license must be configured on the system where the simulations are run. A free academic license can be obtained from the [Gurobi Academic Program](https://www.gurobi.com/academics/).
 
-#### qMINOS
+#### QMINOS
 
-qMINOS simulations require installations of both **qMINOS** and **solvemepy**. These must be installed and configured before running the qMINOS simulation pipeline.
+QMINOS simulations require installations of both **QMINOS** and **solvemepy**. These must be installed and configured before running the QMINOS simulation pipeline.
 
-qMINOS is not distributed with this repository and requires access to the qMINOS source code, which can be obtained from Prof. Michael A. Saunders at Stanford University. Detailed instructions for obtaining, installing, and configuring qMINOS and solvemepy are provided in [`docs/qminos_solveme-installation.md`](docs/qminos_solveme-installation.md).
+QMINOS is not distributed with this repository and requires access to the qMINOS source code, which can be obtained from Prof. Michael A. Saunders at Stanford University. Detailed instructions for obtaining, installing, and configuring qMINOS and solvemepy are provided in [`docs/qminos_solveme-installation.md`](docs/qminos_solveme-installation.md).
 
-Once qMINOS and solvemepy are installed, create the corresponding Conda environment:
+Once QMINOS and solvemepy are installed, create the corresponding Conda environment:
 
 ```bash
 conda env create -f requirements/cobrame-qminos.yml -n cobrame-qminos
